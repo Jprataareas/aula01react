@@ -1,0 +1,13 @@
+import React, {userState, userRef} from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+export default function APP() {// componente funcional
+  /** usando o useState para criar estados para as variáveis base,
+   * altira e area, que serão usadas para armazenar os valores dos campos de entrada eo resultado do cálculo da área
+   * para manipular o comapo de entrada "Base".*/
+   
+  const [ base, setBse]= userState ('');
+  const [ altura, setAltura]= userState ('');
+  const [ area, setArea]= userState ('');
+
+  const baseInputRef = userRef (); // Referência oara i TextImput da base
