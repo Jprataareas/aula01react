@@ -1,0 +1,40 @@
+import React, {useEffect, useState} from "react";
+import { StyleSheet, Text, View, Image } from "react-native";
+
+const pessoa ={ nome: 'Juliana Prata', idade:38, cidade: 'Rio de Janeiro', avatar: require ( './assets/img/icon.png')};
+
+function getHora() {
+  const horaAtual = new Date().getHours();
+
+  if (horaAtual >=5 && horaAtual < 12){
+  return 'Bom dia';
+  
+  else if (horaAtual >= 12 && horaAtual < 18){
+
+    return 'Boa tarde';
+
+  } 
+  else {
+
+    return ' Boa noite';
+  }
+  }
+}
+
+const styles = StyleSheet.create ({ appContainer:
+flex:1,
+backgroundColor:
+})
+
+  
+  saudacaoPersonalizada:{
+    backgroundColor: 'lightblue',
+    padding:10,
+  },
+
+  container:{
+    alignItems: 'center',
+    justifyContent: 'center',
+
+  },
+});
